@@ -4,47 +4,71 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mustafa Mohjoob | Data Analyst Portfolio</title>
+
+  <title>Mustafa Mohjoob | Data Analyst & Power BI Developer</title>
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #f4f6f8;
+      background: #f3f4f6;
       color: #1f2937;
-      line-height: 1.6;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
     }
 
     header {
-      background: #111827;
+      background: linear-gradient(135deg, #0f172a, #1e3a8a);
       color: white;
-      padding: 70px 20px;
+      padding: 80px 20px;
       text-align: center;
     }
 
     header h1 {
       margin: 0;
-      font-size: 44px;
+      font-size: 46px;
+      letter-spacing: 1px;
+    }
+
+    header h2 {
+      margin: 12px 0;
+      font-size: 22px;
+      font-weight: normal;
+      border: none;
+      color: #dbeafe;
     }
 
     header p {
-      margin: 10px 0;
-      font-size: 18px;
+      max-width: 760px;
+      margin: 18px auto;
+      font-size: 17px;
     }
 
     .btn {
       display: inline-block;
-      margin: 10px;
-      padding: 12px 20px;
-      background: #2563eb;
-      color: white;
+      margin: 10px 6px;
+      padding: 12px 22px;
+      background: white;
+      color: #1e3a8a;
       text-decoration: none;
       border-radius: 8px;
       font-weight: bold;
     }
 
+    .btn-dark {
+      background: #111827;
+      color: white;
+    }
+
     section {
-      max-width: 1100px;
+      max-width: 1120px;
       margin: auto;
       padding: 45px 20px;
     }
@@ -53,14 +77,38 @@
       color: #111827;
       border-bottom: 3px solid #2563eb;
       padding-bottom: 8px;
+      margin-bottom: 22px;
     }
 
     .card {
       background: white;
-      padding: 25px;
-      margin-top: 20px;
-      border-radius: 14px;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+      padding: 28px;
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 22px;
+    }
+
+    .stat {
+      background: white;
+      padding: 24px;
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .stat h3 {
+      margin: 0;
+      font-size: 32px;
+      color: #1e3a8a;
+    }
+
+    .stat p {
+      margin: 8px 0 0;
     }
 
     .skills span {
@@ -68,22 +116,15 @@
       background: #e5e7eb;
       padding: 10px 14px;
       margin: 6px;
-      border-radius: 20px;
+      border-radius: 22px;
       font-size: 14px;
-    }
-
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 22px;
-      margin-top: 20px;
     }
 
     .project-card {
       background: white;
-      padding: 25px;
-      border-radius: 14px;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+      padding: 26px;
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
     }
 
     .project-card h3 {
@@ -91,19 +132,47 @@
       color: #111827;
     }
 
+    .project-card p {
+      margin-bottom: 14px;
+    }
+
     .project-card a {
       display: inline-block;
-      margin-top: 12px;
+      margin-top: 10px;
       color: #2563eb;
       text-decoration: none;
       font-weight: bold;
     }
 
+    .tag {
+      display: inline-block;
+      background: #dbeafe;
+      color: #1e3a8a;
+      padding: 6px 10px;
+      margin: 4px 4px 4px 0;
+      border-radius: 16px;
+      font-size: 13px;
+    }
+
     footer {
       text-align: center;
-      padding: 25px;
+      padding: 28px;
       background: #111827;
       color: white;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 34px;
+      }
+
+      header h2 {
+        font-size: 18px;
+      }
+
+      section {
+        padding: 32px 16px;
+      }
     }
   </style>
 </head>
@@ -112,28 +181,59 @@
 
 <header>
   <h1>Mustafa Mohjoob</h1>
-  <p>Data Analyst | Power BI Developer | HR Analytics</p>
-  <p>Abu Dhabi, UAE</p>
+  <h2>Data Analyst | Power BI Developer | HR Analytics</h2>
+
+  <p>
+    I build Power BI dashboards that turn raw data into clear insights for HR, business operations, customer analysis, and executive reporting.
+  </p>
 
   <a class="btn" href="https://github.com/mustafamohjoob1" target="_blank">GitHub</a>
   <a class="btn" href="https://www.linkedin.com/in/mustafa-mahjoob" target="_blank">LinkedIn</a>
-  <a class="btn" href="mailto:mostafa36mu@gmail.com">Email Me</a>
+  <a class="btn btn-dark" href="mailto:mustafamohjoob@outlook.com">Email Me</a>
 </header>
 
 <section>
   <h2>About Me</h2>
+
   <div class="card">
     <p>
-      I am an HR Officer with a Bachelor's degree in Human Resource Management and a growing specialization in Data Analytics and Power BI development.
+      I am an HR Officer with a Bachelor's degree in Human Resource Management and a strong focus on Data Analytics and Power BI development.
     </p>
+
     <p>
-      I build Power BI dashboards that transform raw data into clear business insights. My focus includes HR analytics, KPI reporting, data visualization, Power Query, DAX, and business intelligence reporting.
+      My work combines HR experience with data analytics skills to build dashboards, track KPIs, clean data, create DAX measures, and present insights that support better decisions.
+    </p>
+
+    <p>
+      I am focused on Power BI, HR analytics, business intelligence, workforce reporting, customer analysis, and executive KPI dashboards.
     </p>
   </div>
 </section>
 
 <section>
+  <h2>Portfolio Summary</h2>
+
+  <div class="grid">
+    <div class="stat">
+      <h3>3</h3>
+      <p>Power BI Projects</p>
+    </div>
+
+    <div class="stat">
+      <h3>10+</h3>
+      <p>Core Analytics Skills</p>
+    </div>
+
+    <div class="stat">
+      <h3>HR</h3>
+      <p>Analytics Focus</p>
+    </div>
+  </div>
+</section>
+
+<section>
   <h2>Skills</h2>
+
   <div class="card skills">
     <span>Power BI</span>
     <span>DAX</span>
@@ -145,35 +245,61 @@
     <span>HR Analytics</span>
     <span>KPI Reporting</span>
     <span>Business Intelligence</span>
+    <span>Customer Analysis</span>
+    <span>Executive Reporting</span>
   </div>
 </section>
 
 <section>
-  <h2>Projects</h2>
+  <h2>Featured Projects</h2>
 
-  <div class="projects">
+  <div class="grid">
 
     <div class="project-card">
       <h3>Executive KPI Dashboard</h3>
+
       <p>
-        Executive-level Power BI dashboard tracking revenue, profit, employees, costs, and strategic business KPIs.
+        Executive-level Power BI dashboard that tracks revenue, profit, employees, costs, and business performance indicators.
       </p>
+
+      <div>
+        <span class="tag">Power BI</span>
+        <span class="tag">KPI Reporting</span>
+        <span class="tag">Executive Dashboard</span>
+      </div>
+
       <a href="https://github.com/mustafamohjoob1/Executive-KPI-Dashboard" target="_blank">View Project</a>
     </div>
 
     <div class="project-card">
       <h3>Customer Analysis Dashboard</h3>
+
       <p>
-        Power BI dashboard analyzing customer behavior, revenue trends, product performance, and customer segments.
+        Power BI dashboard focused on customer behavior, revenue trends, customer segments, product performance, and sales insights.
       </p>
+
+      <div>
+        <span class="tag">Power BI</span>
+        <span class="tag">Customer Analysis</span>
+        <span class="tag">Revenue Insights</span>
+      </div>
+
       <a href="https://github.com/mustafamohjoob1/Customer-Analysis-Dashboard" target="_blank">View Project</a>
     </div>
 
     <div class="project-card">
       <h3>HR Analytics Dashboard</h3>
+
       <p>
-        HR dashboard focused on workforce data, employee demographics, department headcount, and HR KPIs.
+        HR dashboard that analyzes workforce data, employee demographics, department headcount, and HR performance metrics.
       </p>
+
+      <div>
+        <span class="tag">Power BI</span>
+        <span class="tag">HR Analytics</span>
+        <span class="tag">Workforce Reporting</span>
+      </div>
+
       <a href="https://github.com/mustafamohjoob1/HR-Analystics-Dashoard" target="_blank">View Project</a>
     </div>
 
@@ -181,25 +307,42 @@
 </section>
 
 <section>
+  <h2>What I Can Do</h2>
+
+  <div class="card">
+    <ul>
+      <li>Build interactive Power BI dashboards</li>
+      <li>Clean and transform data using Power Query</li>
+      <li>Create DAX measures for KPIs</li>
+      <li>Design simple and clear dashboard layouts</li>
+      <li>Analyze HR, customer, and business data</li>
+      <li>Present insights for management reporting</li>
+    </ul>
+  </div>
+</section>
+
+<section>
   <h2>Career Focus</h2>
+
   <div class="card">
     <p>
-      My goal is to grow as a Data Analyst and Power BI Developer by creating practical dashboards that support decision-making in HR, business operations, and executive reporting.
+      My goal is to grow as a Data Analyst and Power BI Developer, with a focus on HR analytics, business intelligence, and dashboard development.
     </p>
   </div>
 </section>
 
 <section>
   <h2>Contact</h2>
+
   <div class="card">
-    <p>Email: <a href="mailto:mostafa36mu@gmail.com">mostafa36mu@gmail.com</a></p>
+    <p>Email: <a href="mailto:mustafamohjoob@outlook.com">mustafamohjoob@outlook.com</a></p>
     <p>GitHub: <a href="https://github.com/mustafamohjoob1" target="_blank">github.com/mustafamohjoob1</a></p>
     <p>LinkedIn: <a href="https://www.linkedin.com/in/mustafa-mahjoob" target="_blank">linkedin.com/in/mustafa-mahjoob</a></p>
   </div>
 </section>
 
 <footer>
-  <p>© 2026 Mustafa Mohjoob | Data Analyst Portfolio</p>
+  <p>© 2026 Mustafa Mohjoob | Data Analyst & Power BI Developer Portfolio</p>
 </footer>
 
 </body>
