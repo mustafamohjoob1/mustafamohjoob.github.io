@@ -1,61 +1,207 @@
+```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Mustafa Mohjoob Portfolio</title>
-<style>
-body{
-font-family:Arial,sans-serif;
-max-width:1000px;
-margin:auto;
-padding:40px;
-background:#f5f5f5;
-}
-.card{
-background:white;
-padding:20px;
-margin-bottom:20px;
-border-radius:10px;
-}
-h1{
-color:#222;
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mustafa Mohjoob | Data Analyst Portfolio</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #111827;
+      color: white;
+      padding: 70px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 44px;
+    }
+
+    header p {
+      margin: 10px 0;
+      font-size: 18px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 20px;
+      background: #2563eb;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 45px 20px;
+    }
+
+    h2 {
+      color: #111827;
+      border-bottom: 3px solid #2563eb;
+      padding-bottom: 8px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      margin-top: 20px;
+      border-radius: 14px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    }
+
+    .skills span {
+      display: inline-block;
+      background: #e5e7eb;
+      padding: 10px 14px;
+      margin: 6px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 22px;
+      margin-top: 20px;
+    }
+
+    .project-card {
+      background: white;
+      padding: 25px;
+      border-radius: 14px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    }
+
+    .project-card h3 {
+      margin-top: 0;
+      color: #111827;
+    }
+
+    .project-card a {
+      display: inline-block;
+      margin-top: 12px;
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #111827;
+      color: white;
+    }
+  </style>
 </head>
+
 <body>
 
-<div class="card">
-<h1>Mustafa Mohjoob</h1>
-<p>Data Analyst | Power BI Developer | HR Analytics</p>
-</div>
+<header>
+  <h1>Mustafa Mohjoob</h1>
+  <p>Data Analyst | Power BI Developer | HR Analytics</p>
+  <p>Abu Dhabi, UAE</p>
 
-<div class="card">
-<h2>About Me</h2>
-<p>
-HR Officer with a specialization in Data Analytics and Power BI.
-Focused on dashboards, KPI reporting, HR analytics, and business intelligence.
-</p>
-</div>
+  <a class="btn" href="https://github.com/mustafamohjoob1" target="_blank">GitHub</a>
+  <a class="btn" href="https://www.linkedin.com/in/mustafa-mahjoob" target="_blank">LinkedIn</a>
+  <a class="btn" href="mailto:mostafa36mu@gmail.com">Email Me</a>
+</header>
 
-<div class="card">
-<h2>Projects</h2>
-<ul>
-<li>HR Analytics Dashboard</li>
-<li>Employee Turnover Dashboard</li>
-<li>Customer Analysis Dashboard</li>
-<li>Executive KPI Dashboard</li>
-</ul>
-</div>
+<section>
+  <h2>About Me</h2>
+  <div class="card">
+    <p>
+      I am an HR Officer with a Bachelor's degree in Human Resource Management and a growing specialization in Data Analytics and Power BI development.
+    </p>
+    <p>
+      I build Power BI dashboards that transform raw data into clear business insights. My focus includes HR analytics, KPI reporting, data visualization, Power Query, DAX, and business intelligence reporting.
+    </p>
+  </div>
+</section>
 
-<div class="card">
-<h2>Skills</h2>
-<ul>
-<li>Power BI</li>
-<li>DAX</li>
-<li>Power Query</li>
-<li>Excel</li>
-<li>Data Modeling</li>
-</ul>
-</div>
+<section>
+  <h2>Skills</h2>
+  <div class="card skills">
+    <span>Power BI</span>
+    <span>DAX</span>
+    <span>Power Query</span>
+    <span>Data Modeling</span>
+    <span>Data Cleaning</span>
+    <span>Excel</span>
+    <span>Dashboard Design</span>
+    <span>HR Analytics</span>
+    <span>KPI Reporting</span>
+    <span>Business Intelligence</span>
+  </div>
+</section>
+
+<section>
+  <h2>Projects</h2>
+
+  <div class="projects">
+
+    <div class="project-card">
+      <h3>Executive KPI Dashboard</h3>
+      <p>
+        Executive-level Power BI dashboard tracking revenue, profit, employees, costs, and strategic business KPIs.
+      </p>
+      <a href="https://github.com/mustafamohjoob1/Executive-KPI-Dashboard" target="_blank">View Project</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Customer Analysis Dashboard</h3>
+      <p>
+        Power BI dashboard analyzing customer behavior, revenue trends, product performance, and customer segments.
+      </p>
+      <a href="https://github.com/mustafamohjoob1/Customer-Analysis-Dashboard" target="_blank">View Project</a>
+    </div>
+
+    <div class="project-card">
+      <h3>HR Analytics Dashboard</h3>
+      <p>
+        HR dashboard focused on workforce data, employee demographics, department headcount, and HR KPIs.
+      </p>
+      <a href="https://github.com/mustafamohjoob1/HR-Analystics-Dashoard" target="_blank">View Project</a>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>Career Focus</h2>
+  <div class="card">
+    <p>
+      My goal is to grow as a Data Analyst and Power BI Developer by creating practical dashboards that support decision-making in HR, business operations, and executive reporting.
+    </p>
+  </div>
+</section>
+
+<section>
+  <h2>Contact</h2>
+  <div class="card">
+    <p>Email: <a href="mailto:mostafa36mu@gmail.com">mostafa36mu@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/mustafamohjoob1" target="_blank">github.com/mustafamohjoob1</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/mustafa-mahjoob" target="_blank">linkedin.com/in/mustafa-mahjoob</a></p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Mustafa Mohjoob | Data Analyst Portfolio</p>
+</footer>
 
 </body>
 </html>
+```
